@@ -11,4 +11,6 @@
 |
 */
 
-
+Route::get("/login", "AuthController@authView");
+Route::post("/login", "AuthController@store");
+Route::get("/logout", "AuthController@logout");
